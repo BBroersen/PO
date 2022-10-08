@@ -1,13 +1,20 @@
 body {
-  background: #d1d1d1;
+  background: #414141;
+   background-image: url("https://i.postimg.cc/PqRD0tL9/Screenshot-2022-10-09-002910.png");
+  background-color: #414141;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .main {
+  color: white;
  display: flex; 
  padding: 10px;
+  font-size: 17px;
 }
 
-.menu, .story, .space {
+.menu, .story, .space, .form, .video {
  margin-top: 75px;
 }
 
@@ -24,6 +31,7 @@ header {
  margin: 3px;
  border: solid;
  border-radius: 20px;
+ opacity: 0.95;
  position: fixed;
  display: flex;
  justify-content: space-between;
@@ -68,7 +76,7 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  border: 1px solid gray;
+  border: 0px solid gray;
   display: flex;
   flex-direction: column;
 }
@@ -105,6 +113,18 @@ header {
   }
   .space {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   {
+   display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   {
+   display: none;
   }
 }
 
@@ -172,3 +192,14 @@ footer {
   font-family: cursive;
 }
 
+.form {
+  flex: 6;
+  margin-left: 50px;
+  font-family: sans-serif;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  margin: 50px;
+}
