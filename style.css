@@ -25,6 +25,7 @@ font-family: Sans-serif;
 
 .space {
  flex: 2;
+ margin: 20px;
 }
 
 header {
@@ -199,8 +200,8 @@ footer {
   font-family: sans-serif;
 }
 
-video {
-  height: 100%;
-  width: 100%;
-  margin: 50px;
+.video {
+    position: fixed; 
+    min-width: 100%; 
+    min-height: 100%;
 }
